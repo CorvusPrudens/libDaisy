@@ -3,6 +3,7 @@
 #include "sys/system.h"
 #include "sys/dma.h"
 #include "per/gpio.h"
+#include "core/clock_structs.h"
 
 // global init functions for peripheral drivers.
 // These don't really need to be extern "C" anymore..
@@ -83,6 +84,14 @@ extern "C"
     }
 }
 
+// // Config structs used in startup
+// extern "C"
+// {
+//     RCC_OscInitTypeDef RCC_OscInitStruct;
+//     RCC_ClkInitTypeDef RCC_ClkInitStruct;
+//     RCC_PeriphCLKInitTypeDef PeriphClkInitStruct;
+// }
+
 namespace daisy
 {
 // Define static tim_
@@ -101,7 +110,7 @@ void System::Init(const System::Config& config)
     cfg_ = config;
     HAL_Init();
     ConfigureClocks();
-    ConfigureMpu();
+    // ConfigureMpu();
     dsy_dma_init();
     dsy_i2c_global_init();
 
@@ -180,9 +189,9 @@ void System::ResetToBootloader()
 
 void System::ConfigureClocks()
 {
-    RCC_OscInitTypeDef       RCC_OscInitStruct   = {0};
-    RCC_ClkInitTypeDef       RCC_ClkInitStruct   = {0};
-    RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
+    // RCC_OscInitTypeDef       RCC_OscInitStruct   = {0};
+    // RCC_ClkInitTypeDef       RCC_ClkInitStruct   = {0};
+    // RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
     /** Supply configuration update enable 
   */

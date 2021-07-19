@@ -205,7 +205,8 @@ CPP_SOURCES += $(addsuffix .cpp, $(addprefix $(MODULE_DIR)/, $(CPP_MODULES)))
 
 # C sources
 C_SOURCES += $(addsuffix .c, $(addprefix $(MODULE_DIR)/, $(C_MODULES)))
-C_SOURCES += core/startup_stm32h750xx.c
+C_SOURCES += core/startup_stm32h750xx.c \
+core/sdram_startup.c
 
 #STARTUP_PATH = Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/gcc
 # ASM sources
@@ -273,6 +274,7 @@ C_INCLUDES = \
 -I$(MODULE_DIR) \
 -I$(MODULE_DIR)/sys \
 -I$(MODULE_DIR)/usbd \
+-I$(MODULE_DIR)/core \
 -IDrivers/CMSIS/Include \
 -IDrivers/CMSIS/Device/ST/STM32H7xx/Include \
 -IDrivers/STM32H7xx_HAL_Driver/Inc \

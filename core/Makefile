@@ -51,10 +51,10 @@ SYSTEM_FILES_DIR ?= \
 CPP_SOURCES ?= 
 
 C_SOURCES += \
-$(SYSTEM_FILES_DIR)/startup_stm32h750xx.c
+$(SYSTEM_FILES_DIR)/startup_stm32h750xx.c 
 
 # Expose platform configuration to all compilation units (CMSIS DSP components)
-C_INCLUDES += -include stm32h7xx.h
+C_INCLUDES += -include stm32h7xx.h 
 
 
 #ASM_SOURCES += \
@@ -124,6 +124,7 @@ C_INCLUDES ?=
 
 C_INCLUDES += \
 -I$(LIBDAISY_DIR) \
+-I$(LIBDAISY_DIR)/core/ \
 -I$(LIBDAISY_DIR)/src/ \
 -I$(LIBDAISY_DIR)/src/sys \
 -I$(LIBDAISY_DIR)/src/usbd \
