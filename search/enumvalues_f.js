@@ -1,9 +1,27 @@
 var searchData=
 [
-  ['tim_5f2_1581',['TIM_2',['../structdaisy_1_1_timer_handle_1_1_config.html#a907160c00bf0cad7ec645368bd4f5bcaa848c6355c514c385d53dde45615d0411',1,'daisy::TimerHandle::Config']]],
-  ['tim_5f3_1582',['TIM_3',['../structdaisy_1_1_timer_handle_1_1_config.html#a907160c00bf0cad7ec645368bd4f5bcaa069b86aefb75f0c622fc14d8e28db631',1,'daisy::TimerHandle::Config']]],
-  ['tim_5f4_1583',['TIM_4',['../structdaisy_1_1_timer_handle_1_1_config.html#a907160c00bf0cad7ec645368bd4f5bcaac9136368e302d247b27e74dd7726ec1f',1,'daisy::TimerHandle::Config']]],
-  ['tim_5f5_1584',['TIM_5',['../structdaisy_1_1_timer_handle_1_1_config.html#a907160c00bf0cad7ec645368bd4f5bcaa6840481ce38511a53a7e49e81c02a936',1,'daisy::TimerHandle::Config']]],
-  ['type_5fmomentary_1585',['TYPE_MOMENTARY',['../classdaisy_1_1_switch.html#a944058682bae079439ddddd42302b483aaddc897d9c79b39b2024829bebb336a1',1,'daisy::Switch']]],
-  ['type_5ftoggle_1586',['TYPE_TOGGLE',['../classdaisy_1_1_switch.html#a944058682bae079439ddddd42302b483a5c6a5cc5d4fbe03be97b81244e669038',1,'daisy::Switch']]]
+  ['scundefined0_2005',['SCUndefined0',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5affb65261a754aed6ac1205c957313e1a',1,'daisy']]],
+  ['scundefined1_2006',['SCUndefined1',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5a09f31e6b22e89d20b9a9912a39be26e7',1,'daisy']]],
+  ['slow_2007',['SLOW',['../classdaisy_1_1_sdmmc_handler.html#a78a654b5e915c05224fb64f0dfbe6bcea0e3066cbbd284dce8b76e7c4620d6d75',1,'daisy::SdmmcHandler']]],
+  ['songpositionpointer_2008',['SongPositionPointer',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5acafb135ab546ad52887416d9a80ac114',1,'daisy']]],
+  ['songselect_2009',['SongSelect',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5a1d841bd69c010006dcd3f90059bda305',1,'daisy']]],
+  ['srtundefined0_2010',['SRTUndefined0',['../namespacedaisy.html#a3069be23e98a0299bbfa8f1759754d45a2eb09ebb3ba848fe764c2a70a8bccc06',1,'daisy']]],
+  ['srtundefined1_2011',['SRTUndefined1',['../namespacedaisy.html#a3069be23e98a0299bbfa8f1759754d45aeac3f9db3a5e741f739a858c71c242a0',1,'daisy']]],
+  ['standard_2012',['STANDARD',['../classdaisy_1_1_sdmmc_handler.html#a78a654b5e915c05224fb64f0dfbe6bcea94e94133f4bdc1794c6b647b8ea134d0',1,'daisy::SdmmcHandler']]],
+  ['start_2013',['Start',['../namespacedaisy.html#a3069be23e98a0299bbfa8f1759754d45a8361fbf1bffde824dc04af5e9a478e67',1,'daisy']]],
+  ['stop_2014',['Stop',['../namespacedaisy.html#a3069be23e98a0299bbfa8f1759754d45ae4621bb0596a2aa6412e6bed132d03ef',1,'daisy']]],
+  ['sw_5f1_2015',['SW_1',['../classdaisy_1_1_daisy_field.html#a418e1e43655501188c4e740e90e98beca741b822407920a640d754e56dc9c5cf2',1,'daisy::DaisyField::SW_1()'],['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911ab2afe0429e8b94db1fad8f879aa4b2ff',1,'daisy::DaisyPetal::SW_1()']]],
+  ['sw_5f2_2016',['SW_2',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911a684e6a6ab7d709f8b827c97b2639f2ab',1,'daisy::DaisyPetal::SW_2()'],['../classdaisy_1_1_daisy_field.html#a418e1e43655501188c4e740e90e98becaead8e960d21a99c44694ae3f7ddedf7b',1,'daisy::DaisyField::SW_2()']]],
+  ['sw_5f3_2017',['SW_3',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911aa2bd052d217894508a36856ea5843d3e',1,'daisy::DaisyPetal']]],
+  ['sw_5f4_2018',['SW_4',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911acda6031d654ad6b6d6f094419e97968c',1,'daisy::DaisyPetal']]],
+  ['sw_5f5_2019',['SW_5',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911a9a13b8958600f5421b29017057614f64',1,'daisy::DaisyPetal']]],
+  ['sw_5f6_2020',['SW_6',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911ad45878f759196455d7fa6ee41ed93dc6',1,'daisy::DaisyPetal']]],
+  ['sw_5f7_2021',['SW_7',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911ae2a1269dd381d8c8aa9de3aae9e400f4',1,'daisy::DaisyPetal']]],
+  ['sw_5flast_2022',['SW_LAST',['../classdaisy_1_1_daisy_petal.html#a2651bb58e6ae33c0bd4bc770df3c7911af4668f61ed58c3103b2800d3cf45ca7c',1,'daisy::DaisyPetal::SW_LAST()'],['../classdaisy_1_1_daisy_field.html#a418e1e43655501188c4e740e90e98beca865113e9e584259b98c17d98e2bb88ad',1,'daisy::DaisyField::SW_LAST()']]],
+  ['sysexend_2023',['SysExEnd',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5a552884ae561eb056d1ffc75827b43057',1,'daisy']]],
+  ['systemcommon_2024',['SystemCommon',['../namespacedaisy.html#aaf09bb687034c8776ca0c68ed3ed4179a211055e6e972c4c9adb11f128aeee32e',1,'daisy']]],
+  ['systemcommonlast_2025',['SystemCommonLast',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5ab6aba2a25dae0b056e5e88f5dcd106bc',1,'daisy']]],
+  ['systemexclusive_2026',['SystemExclusive',['../namespacedaisy.html#a4f648ead175d62e97ceb4d3b49f692f5a22d3dbb96afe5ec810fc6de987200a9c',1,'daisy']]],
+  ['systemrealtime_2027',['SystemRealTime',['../namespacedaisy.html#aaf09bb687034c8776ca0c68ed3ed4179a5b11a7cc1fb889b396a43a2bf7ca77a9',1,'daisy']]],
+  ['systemrealtimelast_2028',['SystemRealTimeLast',['../namespacedaisy.html#a3069be23e98a0299bbfa8f1759754d45ad64c430420659a465fefd49438ecd1fa',1,'daisy']]]
 ];

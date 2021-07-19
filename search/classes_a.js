@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['oleddisplay_954',['OledDisplay',['../classdaisy_1_1_oled_display.html',1,'daisy']]],
-  ['oleddisplay_3c_20daisy_3a_3assd130xdriver_20_3e_955',['OledDisplay&lt; daisy::SSD130xDriver &gt;',['../classdaisy_1_1_oled_display.html',1,'daisy']]]
+  ['noteoffevent_1203',['NoteOffEvent',['../structdaisy_1_1_note_off_event.html',1,'daisy']]],
+  ['noteonevent_1204',['NoteOnEvent',['../structdaisy_1_1_note_on_event.html',1,'daisy']]]
 ];

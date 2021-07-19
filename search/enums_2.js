@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['direction_1356',['Direction',['../structdaisy_1_1_sai_handle_1_1_config.html#a80ffb7d40b82652f1550e8cf6ca56f81',1,'daisy::SaiHandle::Config']]],
-  ['dsy_5fgpio_5fmode_1357',['dsy_gpio_mode',['../group__other.html#ga0edc3fcaf729346c5251d263d732666e',1,'gpio.h']]],
-  ['dsy_5fgpio_5fport_1358',['dsy_gpio_port',['../group__utility.html#ga3f3543798ae410cae1cade28cd0fc14a',1,'daisy_core.h']]],
-  ['dsy_5fgpio_5fpull_1359',['dsy_gpio_pull',['../group__other.html#gad8a85223f8dbcdf2c2cfc9302b3451b8',1,'gpio.h']]],
-  ['dsy_5fqspi_5fdevice_1360',['dsy_qspi_device',['../group__serial.html#ga3ba66239e765eae7fc6ebdb97685d560',1,'qspi.h']]],
-  ['dsy_5fqspi_5fmode_1361',['dsy_qspi_mode',['../group__serial.html#ga480feeff5c0b3783a623e31d2c78bdd3',1,'qspi.h']]],
-  ['dsy_5fqspi_5fpin_1362',['dsy_qspi_pin',['../group__serial.html#ga046814b88e5e4a5b745af18535b23353',1,'qspi.h']]],
-  ['dsy_5fsdram_5fpin_1363',['dsy_sdram_pin',['../group__sdram.html#gae5b02cd39e08c80faa1c81edacf38303',1,'sdram.h']]],
-  ['dsy_5fsdram_5fstate_1364',['dsy_sdram_state',['../group__sdram.html#gaa4b8e04989b35adf4cd19ae52235a03e',1,'sdram.h']]]
+  ['channel_1772',['Channel',['../classdaisy_1_1_dac_handle.html#a43de298bdbb02c15b2a35948a15c7125',1,'daisy::DacHandle']]],
+  ['channelmodetype_1773',['ChannelModeType',['../namespacedaisy.html#af9da54b73be4dec526670bd6c53ad98a',1,'daisy']]],
+  ['counterdir_1774',['CounterDir',['../structdaisy_1_1_timer_handle_1_1_config.html#a0dd9b7de7144428da36ab1e140081e7b',1,'daisy::TimerHandle::Config']]],
+  ['ctrl_1775',['Ctrl',['../classdaisy_1_1_daisy_patch.html#aefa3638dd587fe20c48bbdfba3cd72b3',1,'daisy::DaisyPatch']]],
+  ['curve_1776',['Curve',['../classdaisy_1_1_parameter.html#a2fcb1b7095721f0de77594aabb9594da',1,'daisy::Parameter']]]
 ];

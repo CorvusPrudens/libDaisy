@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interleavingaudiocallback_1337',['InterleavingAudioCallback',['../classdaisy_1_1_audio_handle.html#a25cb1ed797b0f5b6d79a26284454bb6f',1,'daisy::AudioHandle']]]
+  ['flushfuncptr_1750',['FlushFuncPtr',['../structdaisy_1_1_ui_canvas_descriptor.html#a500ad5fdd90fbedadb0761d86f0d0d2e',1,'daisy::UiCanvasDescriptor']]]
 ];
