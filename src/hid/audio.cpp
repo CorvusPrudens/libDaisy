@@ -1,4 +1,5 @@
 #include "hid/audio.h"
+#include <algorithm>
 
 namespace daisy
 {
@@ -156,10 +157,14 @@ AudioHandle::Impl::Start(AudioHandle::AudioCallback callback)
     // Get instance of object
     if(sai2_.IsInitialized())
     {
+        std::fill(buff_rx_[1], buff_rx_[1] + kAudioMaxBufferSize, 0);
+        std::fill(buff_tx_[1], buff_tx_[1] + kAudioMaxBufferSize, 0);
         // Start stream with no callback. Data will be filled externally.
         sai2_.StartDma(
             buff_rx_[1], buff_tx_[1], config_.blocksize * 2 * 2, nullptr);
     }
+    std::fill(buff_rx_[0], buff_rx_[0] + kAudioMaxBufferSize, 0);
+    std::fill(buff_tx_[0], buff_tx_[0] + kAudioMaxBufferSize, 0);
     sai1_.StartDma(buff_rx_[0],
                    buff_tx_[0],
                    config_.blocksize * 2 * 2,
@@ -172,6 +177,9 @@ AudioHandle::Impl::Start(AudioHandle::AudioCallback callback)
 AudioHandle::Result
 AudioHandle::Impl::Start(AudioHandle::InterleavingAudioCallback callback)
 {
+    // Zero fill the buffers to eliminate any possible noise before writes
+    std::fill(buff_rx_[0], buff_rx_[0] + kAudioMaxBufferSize, 0);
+    std::fill(buff_tx_[0], buff_tx_[0] + kAudioMaxBufferSize, 0);
     // Get instance of object
     sai1_.StartDma(buff_rx_[0],
                    buff_tx_[0],
