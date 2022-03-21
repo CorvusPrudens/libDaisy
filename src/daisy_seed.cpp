@@ -151,7 +151,7 @@ void DaisySeed::DeInit()
     // // Perhaps a bit unnecessary, but maybe we'll make
     // // this non-static at some point
     // Ak4556::DeInit(codec_reset_pin);
-    // audio_handle.DeInit();
+    audio_handle.DeInit();
 
     system.DeInit();
 }

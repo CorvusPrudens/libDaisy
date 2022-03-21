@@ -56,8 +56,8 @@ USBHostHandle::Result USBHostHandle::Impl::Init(USBHostHandle::Config config)
 
 USBHostHandle::Result USBHostHandle::Impl::Deinit()
 {
-    USBH_Stop(&hUsbHostHS);
     USBH_DeInit(&hUsbHostHS);
+    HAL_HCD_DeInit(&hhcd_USB_OTG_HS);
     return Result::OK;
 }
 
