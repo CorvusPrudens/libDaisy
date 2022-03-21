@@ -67,7 +67,7 @@ For a starting point, you can look through the linkers provided in libDaisy's `c
 
 ## Detailed Behavior
 
-Once flashed, the bootloader has a grace period of 2.5 seconds on startup indicated by sinusoidal LED blinks. During this time, it will listen for DFU transactions over USB and search any connected media for valid binaries. Once this period elapses, the bootloader will attempt to load a program and jump to it. If no program is present, it will simply wait in the grace period until a DFU transaction occurs. You can extend the grace period indefinitely by pressing the BOOT button (the bootloader will acknowledge the extension with a few rapid blinks).
+Once flashed, the bootloader has a grace period of around 2.5 seconds on startup indicated by sinusoidal LED blinks. During this time, it will listen for DFU transactions over USB and search any connected media for valid binaries. Once this period elapses, the bootloader will attempt to load a program and jump to it. If no program is present, it will simply wait in the grace period until a DFU transaction occurs. You can extend the grace period indefinitely by pressing the BOOT button (the bootloader will acknowledge the extension with a few rapid blinks).
 
 Programs are stored on the QSPI flash chip that comes with every Daisy. The first four 64kB sectors are left untouched, though these may be used in the future for additional features. Sectors are erased in 64kB chunks, so if you plan to use the space beyond the program, ensure that the first address lies on a 64k boundary beyond the size of the program code. In the STM32H7's address space, QSPI flash lies at address `0x90000000`, so programs are stored at `0x90040000`.
 
@@ -75,6 +75,15 @@ The bootloader needs a portion of the SRAM for its own processes. It uses 32kB l
 
 For SD cards and USB drives, the executable binary search is not very sophisticated -- it simply scans through the files in the root directory of the connected media looking for a file with an extension of `.bin`. Once a `.bin` file is found, the search will cease and the binary will be verified as executable. If that check passes, the bootloader will compare the file to what's already stored in QSPI and flash it if the file isn't the same.
 
-SD Cards, if present, are checked before USB drives. If a binary is found on the SD card, the USB drive will be skipped whether it was valid or not.
+SD Cards, if present, are checked before USB drives.
 
-If any error is encountered in the bootloading process, the Daisy will emit a single SOS pattern on the user LED and then continue as normal. The primary cause of errors is invalid programs, which can be encountered after a DFU transaction or in a media search. If you see an SOS, double check any connected media for stray `.bin` files and make sure you're not uploading a program that's supposed to run on the internal flash.
+If any error is encountered in the bootloading process, the Daisy will emit a blink pattern on the user LED and then continue as normal. The number of blinks in the sequence corresponds to the type of error, and is indicated below. The primary cause of errors is invalid programs, which can be encountered after a DFU transaction or in a media search. If you see a blinking sequence, double check any connected media for stray `.bin` files and make sure you're not uploading a program that's supposed to run on the internal flash.
+
+| Number of Blinks | Error |
+| ---------------- | ----- |
+| 1 | Error with binary code location -- ensure the program was compiled for the bootloader |
+| 3 | A file with `.bin` extension was found on the SD card, but did not contain executable code |
+| 4 | An error was encountered when attempting to jump to a program loaded from SD. Best to try again in this case |
+| 5 | A file with `.bin` extension was found on the USB drive, but did not contain executable code |
+| 6 | An error was encountered when attempting to jump to a program loaded from USB. Best to try again in this case |
+| 7 | An error was encountered when attempting to jump to a program loaded from USB. Ensure the program is valid and was compiled for the bootloader |
