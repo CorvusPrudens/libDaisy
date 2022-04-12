@@ -149,7 +149,7 @@ This option switches character encoding on the API. (0:ANSI/OEM or 1:UTF-16)
 /  This option has no effect when _LFN_UNICODE == 0. */
 
 #define _FS_RPATH \
-    0 /**< 0 to 2 
+    2 /**< 0 to 2 
  This option configures support of relative path.
 /
 /   0: Disable relative path and remove related functions.
